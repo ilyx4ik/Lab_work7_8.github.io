@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Адаптивна галерея домашніх десертів та перевірених рецептів.">
+  <title>Тортики &amp; Тістечка — галерея рецептів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="brand-mark" aria-hidden="true">✳</div>
+      <div class="header-copy">
+        <p class="eyebrow">Домашня кондитерська</p>
+        <h1>Тортики <span>&amp;</span> Тістечка</h1>
+        <p class="subtitle">Добірка солодких рецептів для затишних моментів</p>
+      </div>
+      <div class="header-note">З любов’ю<br>до кожного шматочка</div>
+    </header>
+
+    <main class="main-content">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Кулінарна книга</p>
+          <h2>Обери свій десерт</h2>
+        </div>
+        <p class="heading-note">Перевірені рецепти<br>для гарного настрою</p>
+      </div>
+
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-all" checked>
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-pie">
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-roll">
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-cheesecake">
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-cupcake">
+      <input class="filter-state" type="radio" name="dessert-type" id="filter-cake">
+
+      <div class="page-layout">
+        <section class="catalog" aria-label="Галерея десертів">
+          <div class="catalog-topline">
+            <span class="catalog-label">Наша колекція</span>
+            <span class="catalog-count">6 солодких ідей</span>
+          </div>
+
+          <div class="recipe-grid">
+            <article class="recipe-card" data-type="cake">
+              <div class="card-main">
+                <img src="assets/cake-smetannik.jpg" alt="Шматочок домашнього сметанкового торта">
+                <div class="card-description">
+                  <span class="card-type">Торт</span>
+                  <h3>Сметанковий</h3>
+                  <p>Ніжні коржі та легкий сметанний крем.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>265 кКал</strong></div>
+            </article>
+
+            <article class="recipe-card" data-type="cupcake">
+              <div class="card-main">
+                <img src="assets/muffin.jpg" alt="Маффін із рожевим кремом та кольоровою посипкою">
+                <div class="card-description">
+                  <span class="card-type">Тістечко</span>
+                  <h3>Маффін</h3>
+                  <p>Повітряне тісто та ніжна кремова шапочка.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>305 кКал</strong></div>
+            </article>
+
+            <article class="recipe-card" data-type="cheesecake">
+              <div class="card-main">
+                <img src="assets/syrnyky.jpg" alt="Сирники зі свіжими ягодами та цукровою пудрою">
+                <div class="card-description">
+                  <span class="card-type">Сирники</span>
+                  <h3>Три ягоди</h3>
+                  <p>Золотиста скоринка, ягоди та трішки пудри.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>450 кКал</strong></div>
+            </article>
+
+            <article class="recipe-card" data-type="cake">
+              <div class="card-main">
+                <img src="assets/cake-chocolate.jpg" alt="Шоколадний домашній торт із горіховою крихтою">
+                <div class="card-description">
+                  <span class="card-type">Торт</span>
+                  <h3>Смачний</h3>
+                  <p>Насичений шоколадний смак і горіхова крихта.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>523 кКал</strong></div>
+            </article>
+
+            <article class="recipe-card" data-type="roll">
+              <div class="card-main">
+                <img src="assets/roulade.jpg" alt="Шоколадний святковий рулет із кремовою начинкою">
+                <div class="card-description">
+                  <span class="card-type">Рулет</span>
+                  <h3>Святковий</h3>
+                  <p>Шоколадний бісквіт із ніжною начинкою.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>380 кКал</strong></div>
+            </article>
+
+            <article class="recipe-card" data-type="pie">
+              <div class="card-main">
+                <img src="assets/pie.jpg" alt="Домашній пиріг із ягідною начинкою та плетеним тістом">
+                <div class="card-description">
+                  <span class="card-type">Пиріг</span>
+                  <h3>Свято у бабусі</h3>
+                  <p>Рум’яне тісто та соковита ягідна начинка.</p>
+                </div>
+              </div>
+              <div class="card-footer"><span>Калорії у порції</span><strong>298 кКал</strong></div>
+            </article>
+          </div>
+        </section>
+
+        <aside class="filter-panel" aria-label="Фільтри рецептів">
+          <div class="filter-panel-heading">
+            <span class="filter-icon" aria-hidden="true">☷</span>
+            <div>
+              <p class="eyebrow">Знайти швидше</p>
+              <h2>Фільтри</h2>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <h3>Категорія десерту</h3>
+            <div class="type-list">
+              <label class="filter-button" for="filter-pie">Пиріг</label>
+              <label class="filter-button" for="filter-roll">Рулет</label>
+              <label class="filter-button" for="filter-cheesecake">Сирники</label>
+              <label class="filter-button" for="filter-cupcake">Тістечко</label>
+              <label class="filter-button" for="filter-cake">Торт</label>
+              <label class="filter-button reset-button" for="filter-all">Скинути фільтр</label>
+            </div>
+          </div>
+
+          <div class="filter-group calories-group">
+            <h3>Калорії у порції</h3>
+            <div class="range-visual" aria-hidden="true">
+              <span class="range-line"></span>
+              <span class="range-active"></span>
+              <span class="range-knob knob-left"></span>
+              <span class="range-knob knob-right"></span>
+            </div>
+            <div class="range-labels"><span>0 кКал</span><span>600 кКал</span></div>
+            <p class="range-caption">Від 0 до 400 кКал</p>
+            <span class="mockup-note">Візуальний макет фільтра</span>
+          </div>
+
+          <div class="filter-tip">
+            <span aria-hidden="true">✦</span>
+            Оберіть категорію, щоб залишити на сторінці лише потрібні десерти.
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-contact"><span class="footer-label">Є питання?</span><a href="mailto:hello@solodke.ua">hello@solodke.ua</a></div>
+      <div class="footer-message">Зроблено з любов’ю до домашньої випічки</div>
+      <div class="footer-copy">© 2026 Тортики &amp; Тістечка</div>
+    </footer>
+  </div>
+</body>
+</html>
